@@ -3,7 +3,7 @@ name = "bpe_tokenizer"
 version = "1.0.0"
 description = "A high-performance Python tokenizer using Byte-Pair Encoding (BPE) with 50k vocabulary, supporting text encoding, decoding, and normalization for NLP applications."
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 authors = [
   { name = "Md Mohsin" }
 ]
