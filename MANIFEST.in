@@ -1,1 +1,1 @@
-include bpe_tokenizer/vocab.json
+include bp_tokenizer/vocab.json
