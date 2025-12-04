@@ -106,4 +106,4 @@ If you want to improve `bpe_tokenizer`:
 
 ## License
 
-This project is licensed under the MIT License – see the [LICENSE](https://www.google.com) file for details.
+This project is licensed under the MIT License – see the [LICENSE](https://github.com/mdmohsin212/bpe_tokenizer/blob/main/LICENSE) file for details.
