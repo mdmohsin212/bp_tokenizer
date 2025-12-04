@@ -1,6 +1,6 @@
 [project]
 name = "bp_tokenizer"
-version = "1.0.0"
+version = "1.0.1"
 description = "A high-performance Python tokenizer using Byte-Pair Encoding (BPE) with 100k vocabulary, supporting text encoding, decoding, and normalization for NLP applications."
 readme = "README.md"
 requires-python = ">=3.9"
@@ -15,6 +15,12 @@ classifiers = [
 ]
 license = { text = "MIT" }
 
+[project.urls]
+Repository = "https://github.com/mdmohsin212/bpe_tokenizer"
+
 [tool.setuptools]
 packages = ["bp_tokenizer"]
 include-package-data = true
+
+[tool.setuptools.package-data]
+bp_tokenizer = ["*.json"]

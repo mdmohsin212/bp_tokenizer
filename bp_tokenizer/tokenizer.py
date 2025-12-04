@@ -1,6 +1,7 @@
 import json
 import re
 from typing import List
+import os
 
 SPECIAL_TOKENS = {
     "<BOS>": 256,
@@ -10,7 +11,12 @@ SPECIAL_TOKENS = {
 
 class Tokenizer:
     def __init__(self):
-        with open('./bpe_tokenizer/vocab.json', 'r') as f:
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        vocab_path = os.path.join(current_dir, 'vocab.json')
+        if not os.path.exists(vocab_path):
+            raise FileNotFoundError(f"Could not find vocab file at: {vocab_path}")
+        
+        with open(vocab_path, 'r', encoding='utf-8') as f:
             self.__merges = json.load(f)
             
         self.__vocab = {i: bytes([i]) for i in range(256)}

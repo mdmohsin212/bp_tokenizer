@@ -1,4 +1,4 @@
-# BPE Tokenizer
+# BP Tokenizer
 
 `bp_tokenizer` is a high-performance Python tokenizer based on **Byte-Pair Encoding (BPE)**. It supports a **100k vocabulary**, efficient text encoding/decoding, batch processing, and basic text normalization. It is designed for **NLP applications**, preprocessing pipelines, or any project that requires custom tokenization.
 
@@ -23,7 +23,7 @@
 
 You can install directly from PyPI :
 
-    pip install bp-tokenizer==1.0.0
+    pip install bp-tokenizer
     
 
 ## Quick Start
