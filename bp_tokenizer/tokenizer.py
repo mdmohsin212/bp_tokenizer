@@ -1,6 +1,6 @@
 import json
 import re
-from typing import List
+from typing import List, Dict
 import os
 
 SPECIAL_TOKENS = {
@@ -98,3 +98,10 @@ class Tokenizer:
             
         text = re.sub(r'\s+', ' ', text).strip()
         return text
+    
+    def debug(self, text : str) -> List[Dict]:
+        encoded = self.encode(text)
+        ans = []
+        for i in encoded:
+            ans.append({"token" : self.decode([i]), "id" : i})
+        return ans
